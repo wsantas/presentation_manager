@@ -5,6 +5,7 @@ import { hot } from 'react-hot-loader'
 
 import reducer from './store/reducer'
 import { ADD_TODO } from './store/actions'
+import DragDrop from "./DragDrop";
 
 const Todo = lazy(() => import('./Todo'))
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+      <DragDrop/>
       <input ref={input} />
       <button
         type="button"
